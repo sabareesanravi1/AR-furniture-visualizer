@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>AR Furniture Visualizer</title>
+    <style type="text/css">
+      .contain {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .tc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 300%;
+        transform: translate(-60%, -60%);
+        text-shadow: 2px 2px 4px #000000;
+      }
+    </style>
+  </head>
+  <body class="img-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#">AR Furniture Visualizer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="product.html">Our Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-dark btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#login-modal">Sign in</button>
+      </form> 
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-dark btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#signup-modal">Sign Up</button>
+      </form>
+    </div>
+  </nav>    
+ <!--  <div class="container-fluid text-center" id="selection">
+    <h6 class="alert alert-secondary">Choose any furniture and use <a href="https://stemkoski.github.io/AR-Examples/markers/hiro.png" target="_blank">HIRO</a> marker</h6>
+  </div>  -->   
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h3>Sign in to Your Account</h3><br>
+          <form class="form-group">
+          <input type="text" name="user" placeholder="Username" class="form-control">
+          <input type="password" name="pass" placeholder="Password" class="form-control">
+          <input type="submit" name="login" class="login loginmodal-submit " value="Sign in" class="form-control">
+          </form>
+        </div>
+      </div>
+      </div>
+
+ <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h3>Sign up a new Account</h3><br>
+          <form class="form-group">
+          <input type="text" name="user" placeholder="Username" class="form-control">
+          <input type="password" name="pass" placeholder="Password" class="form-control">
+          <input type="submit" name="login" class="login loginmodal-submit " value="Sign Up" class="form-control">
+          </form>
+        </div>
+      </div>
+      </div>
+
+<div class="jumbotron" id="banner">
+  <h2 >Welcome to the world of Furnitures</h2>
+  <p class="lead">Our site allows you to choose furnitures from a huge collection and Visualize using AR. Feel free to explore our collections simply using your browser.</p>
+  <hr class="my-4">
+  <p>Make sure you download and use the <a href="https://stemkoski.github.io/AR-Examples/markers/hiro.png" target="_blank">Hiro</a> marker.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="#" role="button" data-toggle="popover" data-trigger="hover" data-content="AR-markers are visual cues which trigger the display of the virtual information" title="Hiro Marker">What is Hiro?</a>
+  </p>
+</div>
+  <!-- <img class="img-fluid" id="sofa1" src="img/sofa1.jpg" alt=""> -->
+<div class="card border-info mb-3" style="max-width: 100%;">
+  <div class="card-header">Augmented Visuals</div>
+  <div class="card-body text-info">
+    <h5 class="card-title">Augmented Reality</h5>
+    <p class="card-text">We are supporting live AR visualization for the furnitures.</p>
+  </div>
+</div>
+ <div class="contain ">
+   <img class="img-fluid" id="sofa1" src="img/chair1.jpg" alt="">   
+    <p class="tc">Try out virtually!!</p>
+ </div>
+<div class="card text-white bg-dark mb-3" style="max-width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title text-center">AR Furniture Visualizer &copy;</h5>
+    <p class="card-text text-center">Support us by following our Social handles</p>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

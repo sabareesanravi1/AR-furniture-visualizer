@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title >Our Products</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpSuqtD-eAUZRUcbBiZuztGfVzYy854pc3aoA1_U7gqJNKEHO6");
+      }
+      .box {
+        float: left;
+        width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+        padding: 15px; /* if you want space between the images */
+      }
+
+      img {
+        width: 100%;
+        max-width: 100px;
+        height: 226;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        margin : 3px;
+
+      }
+    </style>
+  </head>
+  <body class="img-fluid">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="index.html">AR Furniture Visualizer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Our Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-dark btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#login-modal">Sign in</button>
+      </form> 
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-dark btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#signup-modal">Sign Up</button>
+      </form>
+    </div>
+  </nav>    
+ <!--  <div class="container-fluid text-center" id="selection">
+    <h6 class="alert alert-secondary">Choose any furniture and use <a href="https://stemkoski.github.io/AR-Examples/markers/hiro.png" target="_blank">HIRO</a> marker</h6>
+  </div>  -->   
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h3>Sign in to Your Account</h3><br>
+          <form class="form-group">
+          <input type="text" name="user" placeholder="Username" class="form-control">
+          <input type="password" name="pass" placeholder="Password" class="form-control">
+          <input type="submit" name="login" class="login loginmodal-submit " value="Sign in" class="form-control">
+          </form>
+        </div>
+      </div>
+      </div>
+
+ <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h3>Sign up a new Account</h3><br>
+          <form class="form-group">
+          <input type="text" name="user" placeholder="Username" class="form-control">
+          <input type="password" name="pass" placeholder="Password" class="form-control">
+          <input type="submit" name="login" class="login loginmodal-submit " value="Sign Up" class="form-control">
+          </form>
+        </div>
+      </div>
+      </div>
+        <h4 style="padding-left: 16px;">Furnitures</h4>
+      <div class="container-fluid col-7" >
+           <a href="obj/index.php?name=table1"><img class="img-rounded float-left box" src="obj/table1/prev.jpg" alt="Card image cap"> </a>
+
+            <a href="gltf/index.php?name=bathroomCabinet"><img class="img-rounded float-left box" src="models/bathroomCabinet.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bathroomCabinetDrawer"><img class="img-rounded float-left box" src="models/bathroomCabinetDrawer.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bathroomMirror"><img class="img-rounded float-left box" src="models/bathroomMirror.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bathroomSink"><img class="img-rounded float-left box" src="models/bathroomSink.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bathroomSinkSquare"><img class="img-rounded float-left box" src="models/bathroomSinkSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bathtub"><img class="img-rounded float-left box" src="models/bathtub.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bear"><img class="img-rounded float-left box" src="models/bear.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bedBunk"><img class="img-rounded float-left box" src="models/bedBunk.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bedDouble"><img class="img-rounded float-left box" src="models/bedDouble.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bedSingle"><img class="img-rounded float-left box" src="models/bedSingle.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bench"><img class="img-rounded float-left box" src="models/bench.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=benchCushion"><img class="img-rounded float-left box" src="models/benchCushion.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=benchCushionLow"><img class="img-rounded float-left box" src="models/benchCushionLow.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bookcaseClosed"><img class="img-rounded float-left box" src="models/bookcaseClosed.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bookcaseClosedDoors"><img class="img-rounded float-left box" src="models/bookcaseClosedDoors.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bookcaseClosedWide"><img class="img-rounded float-left box" src="models/bookcaseClosedWide.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bookcaseOpen"><img class="img-rounded float-left box" src="models/bookcaseOpen.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=bookcaseOpenLow"><img class="img-rounded float-left box" src="models/bookcaseOpenLow.png
+            " alt="Card image cap"> </a>
+            <!-- <a href="gltf/index.php?name=books"><img class="img-rounded float-left box" src="models/books.png
+            " alt="Card image cap"> </a> -->
+            <a href="gltf/index.php?name=cabinetBed"><img class="img-rounded float-left box" src="models/cabinetBed.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cabinetBedDrawer"><img class="img-rounded float-left box" src="models/cabinetBedDrawer.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cabinetBedDrawerTable"><img class="img-rounded float-left box" src="models/cabinetBedDrawerTable.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cabinetTelevision"><img class="img-rounded float-left box" src="models/cabinetTelevision.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cabinetTelevisionDoors"><img class="img-rounded float-left box" src="models/cabinetTelevisionDoors.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cardboardBoxClosed"><img class="img-rounded float-left box" src="models/cardboardBoxClosed.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=cardboardBoxOpen"><img class="img-rounded float-left box" src="models/cardboardBoxOpen.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=ceilingFan"><img class="img-rounded float-left box" src="models/ceilingFan.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chair"><img class="img-rounded float-left box" src="models/chair.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chairCushion"><img class="img-rounded float-left box" src="models/chairCushion.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chairDesk"><img class="img-rounded float-left box" src="models/chairDesk.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chairModernCushion"><img class="img-rounded float-left box" src="models/chairModernCushion.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chairModernFrameCushion"><img class="img-rounded float-left box" src="models/chairModernFrameCushion.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=chairRounded"><img class="img-rounded float-left box" src="models/chairRounded.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=coatRack"><img class="img-rounded float-left box" src="models/coatRack.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=coatRackStanding"><img class="img-rounded float-left box" src="models/coatRackStanding.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=computerKeyboard"><img class="img-rounded float-left box" src="models/computerKeyboard.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=computerMouse"><img class="img-rounded float-left box" src="models/computerMouse.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=computerScreen"><img class="img-rounded float-left box" src="models/computerScreen.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=desk"><img class="img-rounded float-left box" src="models/desk.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=deskCorner"><img class="img-rounded float-left box" src="models/deskCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=doorway"><img class="img-rounded float-left box" src="models/doorway.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=doorwayFront"><img class="img-rounded float-left box" src="models/doorwayFront.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=doorwayOpen"><img class="img-rounded float-left box" src="models/doorwayOpen.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=dryer"><img class="img-rounded float-left box" src="models/dryer.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=floorCorner"><img class="img-rounded float-left box" src="models/floorCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=floorCornerRound"><img class="img-rounded float-left box" src="models/floorCornerRound.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=floorFull"><img class="img-rounded float-left box" src="models/floorFull.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=floorHalf"><img class="img-rounded float-left box" src="models/floorHalf.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=hoodLarge"><img class="img-rounded float-left box" src="models/hoodLarge.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=hoodModern"><img class="img-rounded float-left box" src="models/hoodModern.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenBar"><img class="img-rounded float-left box" src="models/kitchenBar.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenBarEnd"><img class="img-rounded float-left box" src="models/kitchenBarEnd.png
+            " alt="Card image cap"> </a>
+            <!-- <a href="gltf/index.php?name=kitchenBlender"><img class="img-rounded float-left box" src="models/kitchenBlender.png
+            " alt="Card image cap"> </a> -->
+            <a href="gltf/index.php?name=kitchenCabinet"><img class="img-rounded float-left box" src="models/kitchenCabinet.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetCornerInner"><img class="img-rounded float-left box" src="models/kitchenCabinetCornerInner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetCornerRound"><img class="img-rounded float-left box" src="models/kitchenCabinetCornerRound.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetDrawer"><img class="img-rounded float-left box" src="models/kitchenCabinetDrawer.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetUpper"><img class="img-rounded float-left box" src="models/kitchenCabinetUpper.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetUpperCorner"><img class="img-rounded float-left box" src="models/kitchenCabinetUpperCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetUpperDouble"><img class="img-rounded float-left box" src="models/kitchenCabinetUpperDouble.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCabinetUpperLow"><img class="img-rounded float-left box" src="models/kitchenCabinetUpperLow.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenCoffeeMachine"><img class="img-rounded float-left box" src="models/kitchenCoffeeMachine.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenFridge"><img class="img-rounded float-left box" src="models/kitchenFridge.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenFridgeBuiltIn"><img class="img-rounded float-left box" src="models/kitchenFridgeBuiltIn.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenFridgeLarge"><img class="img-rounded float-left box" src="models/kitchenFridgeLarge.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenFridgeSmall"><img class="img-rounded float-left box" src="models/kitchenFridgeSmall.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenMicrowave"><img class="img-rounded float-left box" src="models/kitchenMicrowave.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenSink"><img class="img-rounded float-left box" src="models/kitchenSink.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenStove"><img class="img-rounded float-left box" src="models/kitchenStove.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=kitchenStoveElectric"><img class="img-rounded float-left box" src="models/kitchenStoveElectric.png
+            " alt="Card image cap"> </a>
+ <!--            <a href="gltf/index.php?name=lampRoundFloor"><img class="img-rounded float-left box" src="models/lampRoundFloor.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=lampRoundTable"><img class="img-rounded float-left box" src="models/lampRoundTable.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=lampSquareCeiling"><img class="img-rounded float-left box" src="models/lampSquareCeiling.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=lampSquareFloor"><img class="img-rounded float-left box" src="models/lampSquareFloor.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=lampSquareTable"><img class="img-rounded float-left box" src="models/lampSquareTable.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=lampWall"><img class="img-rounded float-left box" src="models/lampWall.png
+            " alt="Card image cap"> </a> -->
+            <a href="gltf/index.php?name=laptop"><img class="img-rounded float-left box" src="models/laptop.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeChair"><img class="img-rounded float-left box" src="models/loungeChair.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeChairRelax"><img class="img-rounded float-left box" src="models/loungeChairRelax.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeDesignChair"><img class="img-rounded float-left box" src="models/loungeDesignChair.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeDesignSofa"><img class="img-rounded float-left box" src="models/loungeDesignSofa.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeDesignSofaCorner"><img class="img-rounded float-left box" src="models/loungeDesignSofaCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeSofa"><img class="img-rounded float-left box" src="models/loungeSofa.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeSofaCorner"><img class="img-rounded float-left box" src="models/loungeSofaCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeSofaLong"><img class="img-rounded float-left box" src="models/loungeSofaLong.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=loungeSofaOttoman"><img class="img-rounded float-left box" src="models/loungeSofaOttoman.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=paneling"><img class="img-rounded float-left box" src="models/paneling.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=pillow"><img class="img-rounded float-left box" src="models/pillow.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=pillowBlue"><img class="img-rounded float-left box" src="models/pillowBlue.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=pillowBlueLong"><img class="img-rounded float-left box" src="models/pillowBlueLong.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=pillowLong"><img class="img-rounded float-left box" src="models/pillowLong.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=plantSmall1"><img class="img-rounded float-left box" src="models/plantSmall1.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=plantSmall2"><img class="img-rounded float-left box" src="models/plantSmall2.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=plantSmall3"><img class="img-rounded float-left box" src="models/plantSmall3.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=pottedPlant"><img class="img-rounded float-left box" src="models/pottedPlant.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=radio"><img class="img-rounded float-left box" src="models/radio.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=rugDoormat"><img class="img-rounded float-left box" src="models/rugDoormat.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=rugRectangle"><img class="img-rounded float-left box" src="models/rugRectangle.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=rugRound"><img class="img-rounded float-left box" src="models/rugRound.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=rugRounded"><img class="img-rounded float-left box" src="models/rugRounded.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=rugSquare"><img class="img-rounded float-left box" src="models/rugSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=shower"><img class="img-rounded float-left box" src="models/shower.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=showerRound"><img class="img-rounded float-left box" src="models/showerRound.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=sideTable"><img class="img-rounded float-left box" src="models/sideTable.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=sideTableDrawers"><img class="img-rounded float-left box" src="models/sideTableDrawers.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=speaker"><img class="img-rounded float-left box" src="models/speaker.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=speakerSmall"><img class="img-rounded float-left box" src="models/speakerSmall.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stairs"><img class="img-rounded float-left box" src="models/stairs.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stairsCorner"><img class="img-rounded float-left box" src="models/stairsCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stairsOpen"><img class="img-rounded float-left box" src="models/stairsOpen.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stairsOpenSingle"><img class="img-rounded float-left box" src="models/stairsOpenSingle.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stoolBar"><img class="img-rounded float-left box" src="models/stoolBar.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=stoolBarSquare"><img class="img-rounded float-left box" src="models/stoolBarSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=table"><img class="img-rounded float-left box" src="models/table.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCloth"><img class="img-rounded float-left box" src="models/tableCloth.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCoffee"><img class="img-rounded float-left box" src="models/tableCoffee.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCoffeeGlass"><img class="img-rounded float-left box" src="models/tableCoffeeGlass.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCoffeeGlassSquare"><img class="img-rounded float-left box" src="models/tableCoffeeGlassSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCoffeeSquare"><img class="img-rounded float-left box" src="models/tableCoffeeSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCross"><img class="img-rounded float-left box" src="models/tableCross.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableCrossCloth"><img class="img-rounded float-left box" src="models/tableCrossCloth.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableGlass"><img class="img-rounded float-left box" src="models/tableGlass.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=tableRound"><img class="img-rounded float-left box" src="models/tableRound.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=televisionAntenna"><img class="img-rounded float-left box" src="models/televisionAntenna.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=televisionModern"><img class="img-rounded float-left box" src="models/televisionModern.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=televisionVintage"><img class="img-rounded float-left box" src="models/televisionVintage.png
+            " alt="Card image cap"> </a>
+            <!-- <a href="gltf/index.php?name=tmp"><img class="img-rounded float-left box" src="models/tmp.txt
+            " alt="Card image cap"> </a> -->
+            <a href="gltf/index.php?name=toaster"><img class="img-rounded float-left box" src="models/toaster.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=toilet"><img class="img-rounded float-left box" src="models/toilet.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=toiletSquare"><img class="img-rounded float-left box" src="models/toiletSquare.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=trashcan"><img class="img-rounded float-left box" src="models/trashcan.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wall"><img class="img-rounded float-left box" src="models/wall.png
+            " alt="Card image cap"> </a>
+           <!--  <a href="gltf/index.php?name=wallCorner"><img class="img-rounded float-left box" src="models/wallCorner.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wallCornerRond"><img class="img-rounded float-left box" src="models/wallCornerRond.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wallDoorway"><img class="img-rounded float-left box" src="models/wallDoorway.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wallDoorwayWide"><img class="img-rounded float-left box" src="models/wallDoorwayWide.png
+            " alt="Card image cap"> </a> -->
+            <a href="gltf/index.php?name=wallHalf"><img class="img-rounded float-left box" src="models/wallHalf.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wallWindow"><img class="img-rounded float-left box" src="models/wallWindow.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=wallWindowSlide"><img class="img-rounded float-left box" src="models/wallWindowSlide.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=washer"><img class="img-rounded float-left box" src="models/washer.png
+            " alt="Card image cap"> </a>
+            <a href="gltf/index.php?name=washerDryerStacked"><img class="img-rounded float-left box" src="models/washerDryerStacked.png
+            " alt="Card image cap"> </a>
+      </div>
+      <!-- <p>adsafvbgfdasfbgvgfdsvb cvxdcvx xzx </p> -->
+<!--       <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+  </body>
+</html>
